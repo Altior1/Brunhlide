@@ -287,7 +287,6 @@ class DiscordBot(commands.Bot):
             raise error
 
 
-load_dotenv()
-
+load_dotenv(".env.example")
 bot = DiscordBot()
 bot.run(os.getenv("TOKEN"))
